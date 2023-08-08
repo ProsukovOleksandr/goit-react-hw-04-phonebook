@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-export const Filter = ({onFilter}) => {
+export const Filter = ({onFilter, filter}) => {
     return (
       <label>
         Find contacts by name
-        <input type="text" onChange={onFilter}  />
+        <input type="text" onChange={onFilter} value={filter}  />
       </label>
     );
   
